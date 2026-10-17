@@ -1,0 +1,27 @@
+{
+  "admissions": 800,
+  "days": 60,
+  "cgm_admissions": 406,
+  "fhir_resources": {
+    "Patient": 800,
+    "Encounter": 800,
+    "Condition": 870,
+    "Observation": 27699,
+    "MedicationRequest": 6494,
+    "MedicationAdministration": 20772,
+    "NutritionOrder": 1206,
+    "NutritionIntake": 15393,
+    "Procedure": 268
+  },
+  "poc_readings": 19668,
+  "poc_mean": 177.0,
+  "poc_in_140_180": 0.284,
+  "admissions_with_poc_low": 0.091,
+  "process_failures": {
+    "insulin_not_reduced_on_aki": 91,
+    "basal_not_reduced_before_fasting": 38,
+    "insulin_not_reduced_after_steroid_stop": 36,
+    "prandial_given_while_fasting": 24,
+    "sulfonylurea_given_while_fasting": 7
+  }
+}

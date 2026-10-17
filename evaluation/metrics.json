@@ -1,0 +1,409 @@
+{
+  "model_version": "gw-d83eeb94f9",
+  "thresholds": {
+    "low_A": {
+      "amber": 0.11,
+      "red": 0.361
+    },
+    "low_B": {
+      "amber": 0.079,
+      "red": 0.333
+    },
+    "high_A": {
+      "amber": 0.315,
+      "red": 0.415
+    },
+    "high_B": {
+      "amber": 0.28,
+      "red": 0.44
+    }
+  },
+  "risk": {
+    "low": {
+      "twin_A": {
+        "auroc": 0.8821144818872658,
+        "auprc": 0.47272377965484746,
+        "prevalence": 0.05103969754253308,
+        "brier": 0.035156540275100887,
+        "ece": 0.012687360398453978,
+        "n": 8464
+      },
+      "twin_B": {
+        "auroc": 0.9301271476593626,
+        "auprc": 0.5749449970687848,
+        "prevalence": 0.05103969754253308,
+        "brier": 0.03012876380141256,
+        "ece": 0.011238457451359287,
+        "n": 8464
+      },
+      "static_admission_model": {
+        "auroc": 0.7000944428305297,
+        "auprc": 0.11801054107893814,
+        "prevalence": 0.05103969754253308,
+        "brier": 0.051942762299108956,
+        "ece": 0.05144798806568667,
+        "n": 8464
+      },
+      "simple_rule": {
+        "recall": 0.44675925925925924,
+        "precision": 0.2880597014925373,
+        "flag_rate": 0.07915879017013233
+      }
+    },
+    "high": {
+      "twin_A": {
+        "auroc": 0.8947636772192107,
+        "auprc": 0.7518858279668219,
+        "prevalence": 0.23003308128544422,
+        "brier": 0.09745468793558505,
+        "ece": 0.038931918195711825,
+        "n": 8464
+      },
+      "twin_B": {
+        "auroc": 0.9348770892673022,
+        "auprc": 0.8491249226211833,
+        "prevalence": 0.23003308128544422,
+        "brier": 0.07788284931982375,
+        "ece": 0.02511410544917749,
+        "n": 8464
+      },
+      "static_admission_model": {
+        "auroc": 0.736171069792654,
+        "auprc": 0.43559478485308883,
+        "prevalence": 0.23003308128544422,
+        "brier": 0.16255666263327012,
+        "ece": 0.10078868326427735,
+        "n": 8464
+      },
+      "simple_rule": {
+        "recall": 0.7098099640472522,
+        "precision": 0.5521374350779065,
+        "flag_rate": 0.29572306238185253
+      }
+    }
+  },
+  "board_episodes": {
+    "low_A": {
+      "episodes": 64,
+      "flagged_before_onset": 0.6875,
+      "median_lead_h": 11.333333333333334,
+      "red_hours_per_patient_day": 0.6436672967863895,
+      "red_hours_not_followed_by_episode": 0.4008810572687225
+    },
+    "low_B": {
+      "episodes": 64,
+      "flagged_before_onset": 0.859375,
+      "median_lead_h": 11.25,
+      "red_hours_per_patient_day": 0.6805293005671078,
+      "red_hours_not_followed_by_episode": 0.30416666666666664
+    },
+    "high_A": {
+      "episodes": 134,
+      "flagged_before_onset": 0.8731343283582089,
+      "median_lead_h": 11.5,
+      "red_hours_per_patient_day": 6.439508506616257,
+      "red_hours_not_followed_by_episode": 0.5178335535006605
+    },
+    "high_B": {
+      "episodes": 134,
+      "flagged_before_onset": 0.9776119402985075,
+      "median_lead_h": 11.416666666666666,
+      "red_hours_per_patient_day": 5.103969754253309,
+      "red_hours_not_followed_by_episode": 0.4038888888888889
+    }
+  },
+  "adaptive_sensing": {
+    "low_episodes": 64,
+    "share_after_first_red_flag": 0.796875,
+    "admissions_flagged": 0.08771929824561403,
+    "sensor_days_share": 0.07455103969754255,
+    "note": "If a CGM were started at the twin's first red-for-low flag (fingerstick mode), these lows would occur while monitored."
+  },
+  "trajectory": {
+    "A": {
+      "1": {
+        "err": 20.898,
+        "cov": 0.839,
+        "width": 72.544,
+        "persistence": 35.891
+      },
+      "2": {
+        "err": 21.153,
+        "cov": 0.842,
+        "width": 72.518,
+        "persistence": 37.032
+      },
+      "3": {
+        "err": 21.257,
+        "cov": 0.836,
+        "width": 72.413,
+        "persistence": 37.532
+      },
+      "4": {
+        "err": 21.696,
+        "cov": 0.825,
+        "width": 72.504,
+        "persistence": 37.161
+      },
+      "5": {
+        "err": 21.84,
+        "cov": 0.829,
+        "width": 72.512,
+        "persistence": 37.03
+      },
+      "6": {
+        "err": 21.612,
+        "cov": 0.833,
+        "width": 72.443,
+        "persistence": 37.702
+      },
+      "7": {
+        "err": 21.874,
+        "cov": 0.825,
+        "width": 72.551,
+        "persistence": 37.292
+      },
+      "8": {
+        "err": 21.825,
+        "cov": 0.826,
+        "width": 72.57,
+        "persistence": 36.397
+      },
+      "9": {
+        "err": 21.69,
+        "cov": 0.833,
+        "width": 72.502,
+        "persistence": 36.198
+      },
+      "10": {
+        "err": 21.954,
+        "cov": 0.825,
+        "width": 72.621,
+        "persistence": 35.976
+      },
+      "11": {
+        "err": 21.783,
+        "cov": 0.824,
+        "width": 72.656,
+        "persistence": 35.553
+      },
+      "12": {
+        "err": 21.815,
+        "cov": 0.834,
+        "width": 72.643,
+        "persistence": 35.766
+      }
+    },
+    "B": {
+      "1": {
+        "err": 13.747,
+        "cov": 0.907,
+        "width": 56.663,
+        "persistence": 35.891
+      },
+      "2": {
+        "err": 16.966,
+        "cov": 0.863,
+        "width": 61.913,
+        "persistence": 37.032
+      },
+      "3": {
+        "err": 18.919,
+        "cov": 0.844,
+        "width": 65.966,
+        "persistence": 37.532
+      },
+      "4": {
+        "err": 20.012,
+        "cov": 0.827,
+        "width": 66.584,
+        "persistence": 37.161
+      },
+      "5": {
+        "err": 20.194,
+        "cov": 0.814,
+        "width": 66.532,
+        "persistence": 37.03
+      },
+      "6": {
+        "err": 20.093,
+        "cov": 0.825,
+        "width": 66.492,
+        "persistence": 37.702
+      },
+      "7": {
+        "err": 20.334,
+        "cov": 0.815,
+        "width": 66.721,
+        "persistence": 37.292
+      },
+      "8": {
+        "err": 20.437,
+        "cov": 0.816,
+        "width": 66.698,
+        "persistence": 36.397
+      },
+      "9": {
+        "err": 20.468,
+        "cov": 0.816,
+        "width": 66.665,
+        "persistence": 36.198
+      },
+      "10": {
+        "err": 20.77,
+        "cov": 0.81,
+        "width": 66.892,
+        "persistence": 35.976
+      },
+      "11": {
+        "err": 20.423,
+        "cov": 0.824,
+        "width": 66.885,
+        "persistence": 35.553
+      },
+      "12": {
+        "err": 20.527,
+        "cov": 0.812,
+        "width": 66.833,
+        "persistence": 35.766
+      }
+    }
+  },
+  "check_timing": {
+    "protocol_only": {
+      "low_caught": 0.12307692307692308,
+      "high_caught": 0.5167785234899329,
+      "extra_checks_per_patient_day": 0.0
+    },
+    "twin_threshold_0.1": {
+      "low_caught": 0.23076923076923078,
+      "high_caught": 0.5771812080536913,
+      "extra_checks_per_patient_day": 0.43528072696061054,
+      "extra_checks": 162,
+      "targeted_patients_random_hour_low_caught": 0.24615384615384617,
+      "targeted_patients_random_hour_high_caught": 0.5570469798657718,
+      "untargeted_same_number_low_caught": 0.13846153846153847,
+      "untargeted_same_number_high_caught": 0.5436241610738255,
+      "extra_lows_caught_per_100_checks": 4.320987654320987,
+      "untargeted_extra_lows_per_100_checks": 0.6172839506172839
+    },
+    "twin_threshold_0.2": {
+      "low_caught": 0.2,
+      "high_caught": 0.5503355704697986,
+      "extra_checks_per_patient_day": 0.2848133151717575,
+      "extra_checks": 106,
+      "targeted_patients_random_hour_low_caught": 0.18461538461538463,
+      "targeted_patients_random_hour_high_caught": 0.5436241610738255,
+      "untargeted_same_number_low_caught": 0.12307692307692308,
+      "untargeted_same_number_high_caught": 0.5167785234899329,
+      "extra_lows_caught_per_100_checks": 4.716981132075472,
+      "untargeted_extra_lows_per_100_checks": 0.0
+    },
+    "twin_threshold_0.3": {
+      "low_caught": 0.16923076923076924,
+      "high_caught": 0.5369127516778524,
+      "extra_checks_per_patient_day": 0.21764036348030527,
+      "extra_checks": 81,
+      "targeted_patients_random_hour_low_caught": 0.15384615384615385,
+      "targeted_patients_random_hour_high_caught": 0.5570469798657718,
+      "untargeted_same_number_low_caught": 0.13846153846153847,
+      "untargeted_same_number_high_caught": 0.5167785234899329,
+      "extra_lows_caught_per_100_checks": 3.7037037037037037,
+      "untargeted_extra_lows_per_100_checks": 1.2345679012345678
+    },
+    "twin_threshold_0.4": {
+      "low_caught": 0.13846153846153847,
+      "high_caught": 0.5234899328859061,
+      "extra_checks_per_patient_day": 0.15315432985651112,
+      "extra_checks": 57,
+      "targeted_patients_random_hour_low_caught": 0.13846153846153847,
+      "targeted_patients_random_hour_high_caught": 0.5302013422818792,
+      "untargeted_same_number_low_caught": 0.12307692307692308,
+      "untargeted_same_number_high_caught": 0.5234899328859061,
+      "extra_lows_caught_per_100_checks": 1.7543859649122806,
+      "untargeted_extra_lows_per_100_checks": 0.0
+    },
+    "fixed_3am_check_on_insulin": {
+      "low_caught": 0.15384615384615385,
+      "high_caught": 0.5302013422818792,
+      "extra_checks_per_patient_day": 0.5884350568171217,
+      "extra_checks": 219,
+      "extra_lows_caught_per_100_checks": 0.91324200913242
+    },
+    "episodes": {
+      "low": 65,
+      "high": 149,
+      "admissions": 57,
+      "patient_days": 372.2
+    }
+  },
+  "insulin_check": {
+    "injected_failures_flagged": {
+      "prandial_given_while_fasting": {
+        "flagged": 24,
+        "total": 24,
+        "rate": 1.0
+      },
+      "basal_not_reduced_before_fasting": {
+        "flagged": 38,
+        "total": 38,
+        "rate": 1.0
+      },
+      "insulin_not_reduced_after_steroid_stop": {
+        "flagged": 26,
+        "total": 31,
+        "rate": 0.8387096774193549
+      },
+      "insulin_not_reduced_on_aki": {
+        "flagged": 81,
+        "total": 91,
+        "rate": 0.8901098901098901
+      },
+      "sulfonylurea_given_while_fasting": {
+        "flagged": 7,
+        "total": 7,
+        "rate": 1.0
+      }
+    },
+    "overall_flag_rate": 0.9214659685863874,
+    "routine_doses_checked": 598,
+    "high_flags_per_dose": 0.046822742474916385,
+    "patient_days_sampled": 391.8
+  },
+  "discharge": {
+    "undiagnosed_diabetes_admissions": 127,
+    "identified_as_probable_new_diagnosis": 0.6377952755905512,
+    "prompted_to_order_hba1c": 0.2755905511811024,
+    "identified_or_prompted": 0.9133858267716536,
+    "false_new_diagnosis_in_stress_hyperglycaemia": 0.0,
+    "note": "Uses all 800 admissions (rule-based, no model). Without the prompt, undiagnosed cases are missed whenever HbA1c is not ordered."
+  },
+  "what_if_validation": {
+    "scale_fitted_on_train": {
+      "basal": 0.5004390536531053,
+      "rapid": 0.4968199500791623
+    },
+    "test_events": 60,
+    "test_rows": 4284,
+    "basal": {
+      "mae_pharmacology": 6.102691942527245,
+      "mae_learned_forecast": 12.185141553295654,
+      "mae_assume_no_effect": 13.345057878315362,
+      "corr_pharmacology": 0.8429408998199595,
+      "corr_learned_forecast": 0.4148971215825682,
+      "mean_true_effect_6h_when_held": 25.153247684627384,
+      "mean_pharm_effect_6h_when_held": 23.310908243973966,
+      "mean_learned_effect_6h_when_held": 2.414269691772172
+    },
+    "prandial": {
+      "mae_pharmacology": 5.402372809783404,
+      "mae_learned_forecast": 10.732036358966262,
+      "mae_assume_no_effect": 11.869510345358066,
+      "corr_pharmacology": 0.8755015385228154,
+      "corr_learned_forecast": 0.5900920658482149,
+      "mean_true_effect_6h_when_held": 14.6476195199149,
+      "mean_pharm_effect_6h_when_held": 23.27925170309381,
+      "mean_learned_effect_6h_when_held": 3.212341707077866
+    }
+  }
+}

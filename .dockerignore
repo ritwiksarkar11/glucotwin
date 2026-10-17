@@ -1,0 +1,4 @@
+data/twin.db*
+data/synthetic/_features.parquet
+**/__pycache__
+.pytest_cache

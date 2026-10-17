@@ -1,0 +1,52 @@
+{
+  "version": "gw-d83eeb94f9",
+  "files": {
+    "risk|low|A": "risk_low_A.txt",
+    "risk|low|B": "risk_low_B.txt",
+    "risk|high|A": "risk_high_A.txt",
+    "risk|high|B": "risk_high_B.txt",
+    "traj|A|mid": "traj_A_mid.txt",
+    "traj|A|lo": "traj_A_lo.txt",
+    "traj|A|hi": "traj_A_hi.txt",
+    "traj|B|mid": "traj_B_mid.txt",
+    "traj|B|lo": "traj_B_lo.txt",
+    "traj|B|hi": "traj_B_hi.txt"
+  },
+  "conformal": {
+    "A": 12.30626486590964,
+    "B": 8.837522729441199
+  },
+  "thresholds": {
+    "low_A": {
+      "amber": 0.11,
+      "red": 0.361
+    },
+    "low_B": {
+      "amber": 0.079,
+      "red": 0.333
+    },
+    "high_A": {
+      "amber": 0.315,
+      "red": 0.415
+    },
+    "high_B": {
+      "amber": 0.28,
+      "red": 0.44
+    }
+  },
+  "meta": {
+    "rows_risk": 60632,
+    "rows_traj": 244200,
+    "admissions": {
+      "cal": 64,
+      "test": 57,
+      "train": 285
+    },
+    "rounds_low_A": 107,
+    "rounds_low_B": 180,
+    "rounds_high_A": 118,
+    "rounds_high_B": 198,
+    "train_seconds": 47,
+    "lightgbm": "4.7.0"
+  }
+}

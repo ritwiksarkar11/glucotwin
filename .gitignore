@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*.egg-info/
+.venv/
+.env
+data/ward.db*
+data/synthetic/_risk.parquet
+data/synthetic/_traj.parquet
+.ipynb_checkpoints/
