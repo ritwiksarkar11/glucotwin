@@ -14,10 +14,10 @@
 | | |
 |---|---|
 | Team name | _GlucoTwin_ |
-| Team leader | _Ritwik Sarkar_ |
-| Members | _[Priya Manadal_ |
+| Team leader | _Ritwik Sarkar (PGP41036)_ |
+| Members | _Priya Manadal (PGP41385)_ |
 | College / incubator | Indian Institute of Management Lucknow |
-| Challenge | Happiest Health — Digital Twin in Healthcare PoC Challenge, Phase 1 |
+| Challenge | Happiest Health — Digital Twin in Healthcare PoC Challenge|
 
 ## Submission checklist
 
