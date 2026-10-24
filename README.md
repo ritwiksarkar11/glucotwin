@@ -13,10 +13,10 @@
 
 | | |
 |---|---|
-| Team name | _[team name]_ |
-| Team leader | _[name]_ · _[email]_ |
-| Members | _[name — programme, institute]_ (up to 4) |
-| College / incubator | Indian Institute of Management Lucknow · _[incubator, if applicable]_ |
+| Team name | _GlucoTwin_ |
+| Team leader | _Ritwik Sarkar_ |
+| Members | _[Priya Manadal_ |
+| College / incubator | Indian Institute of Management Lucknow |
 | Challenge | Happiest Health — Digital Twin in Healthcare PoC Challenge, Phase 1 |
 
 ## Submission checklist
@@ -27,7 +27,6 @@
 | Project title | GlucoTwin Ward |
 | Problem statement and healthcare use case | [§1](#1-the-problem) · [product brief](docs/product_brief.md) |
 | Technical stack and AI/ML model details | [§5](#5-technical-stack), [§6](#6-how-the-twin-works) |
-| Video (≥ 20 min) | **_[unlisted YouTube link]_** · script: [`docs/video_script.md`](docs/video_script.md) |
 | Open-source licence | Apache-2.0 — [`LICENSE`](LICENSE) |
 | Architecture diagram (PDF) | [`docs/architecture.pdf`](docs/architecture.pdf) |
 | Presentation (PDF/PPT) | [`presentation/project_deck.pdf`](presentation/project_deck.pdf) · [`.pptx`](presentation/project_deck.pptx) |
